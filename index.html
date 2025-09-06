@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charu's Portfolio</title>
+  <style>
+    /* --- Reset --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #f0f4ff, #e8f9f1);
+      color: #333;
+      line-height: 1.6;
+    }
+    /* --- Header --- */
+    header {
+      background: linear-gradient(135deg, #4a90e2, #00796b);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.3rem;
+    }
+    /* --- Navbar --- */
+    nav {
+      background: #333;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #4a90e2;
+    }
+    /* --- Sections --- */
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #00796b;
+    }
+    /* --- Profile Section --- */
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .profile:hover {
+      transform: scale(1.02);
+    }
+    .profile img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #4a90e2;
+      transition: transform 0.3s;
+    }
+    .profile img:hover {
+      transform: rotate(5deg) scale(1.05);
+    }
+    .profile-text {
+      max-width: 600px;
+    }
+    .profile-text h3 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #4a90e2;
+    }
+    /* --- Skills --- */
+    ul.skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      gap: 15px;
+    }
+    ul.skills li {
+      background: #4a90e2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    ul.skills li:hover {
+      background: #00796b;
+    }
+    /* --- Projects --- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      color: #00796b;
+      margin-bottom: 10px;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #4a90e2;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .card a:hover {
+      color: #00796b;
+    }
+    /* --- Contact --- */
+    .contact p {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .contact a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact a:hover {
+      color: #00796b;
+    }
+
+    .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+    }
+
+    .download-button:hover {
+            background-color: #555;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hi, I'm Yawash 👋</h1>
+    <p>Full Stack Web Developer | Building Modern Web Apps 🚀</p>
+  </header>
+
+  <nav>
+    <a href="#profile">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <h2>My Profile</h2>
+    <div class="profile">
+      <img src="yawash.jpg"alt="My Profile Picture">
+      <div class="profile-text">
+        <h3>Yawash</h3>
+        <p>I am a passionate Full Stack Web Developer with experience in designing 
+        modern user interfaces and building efficient backend systems. I enjoy 
+        solving problems and delivering user-friendly applications with clean code.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul class="skills">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>MongoDB</li>
+      <li>MySQL</li>
+      <li>Git & GitHub</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Todo App</h3>
+        <p>A task management app with add/delete features built using HTML, CSS & JS.</p>
+        <a href="#">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>This personal portfolio website showcasing my skills and projects.</p>
+        <a href="#">🔗 View Project</a>
+      </div>
+      <div class="card">
+        <h3>E-commerce Website</h3>
+        <p>A full stack shopping platform built with React, Node.js & MongoDB.</p>
+        <a href="#">🔗 View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="C:\Users\pavia\Downloads\yawash.doc"target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="yawashm@srmasc.ac.in"></a>yawashm@srmasc.ac.in</p>
+    <p>GitHub: <a href="https://github.com/" target="_blank">github.com/yourgithub</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Yawash | Full Stack Web Developer</p>
+  </footer>
+
+</body>
+</html>
